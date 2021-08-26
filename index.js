@@ -26,6 +26,25 @@ async function App() {
 async function openModal(index){
     const data = await getData();
     console.log(data[index].name);
+    modal.innerHTML = `
+    <div class="modelContentSlot">
+        <div class="header">
+            <div class="title">Region: ${data[index].region}</div>
+        </div>
+        <div class="body">
+            <div>Bandera del país</div>
+            <img class="img" src="${data[index].flag}" /></div>
+        <div class="footer">
+            <button onclick="closeModal()" class="button">Cerrar</button>
+        </div>
+    </div>
+    `
+    modal.open()
+}
+
+function closeModal() {
+    modal.close();
 }
 const main_container = document.getElementById('main_container');
+const modal = document.querySelector('my-modal');
 App();
