@@ -40,8 +40,6 @@ async function openModal(index){
     </div>
     `
     modal.open()
-
-
 }
 
 function closeModal() {
