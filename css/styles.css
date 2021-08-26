@@ -26,9 +26,18 @@ body{
     justify-content: space-between;
 }
 
-
 .container .footer{
     background: #12203E;
     color: #fff;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .footer > span{
+    min-width: 240px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
 }
